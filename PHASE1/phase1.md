@@ -34,7 +34,7 @@ After executing the scanner, the correct credentials are discovered:
 - **Username:** `vagrant`
 - **Password:** `vagrant`
 
-![Brute-force result](./image3.png)  
+![Brute-force result](./Results1.1.png)  
 
 This allows remote command execution via SSH.
 
@@ -75,7 +75,7 @@ After running the custom script, the correct SSH login credentials were discover
 - **Password:** `vagrant`
 
 This result is shown below:  
-![Script output - success](./image8.png)
+![Script output - success](./Results1.2.png)
 
 Similar to Task 1.1 Step 3, these credentials can now be used to SSH into the victim machine and execute remote commands.
 
