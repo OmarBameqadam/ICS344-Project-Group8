@@ -15,7 +15,7 @@
 
 As shown in the image below, the SSH service is open on the victim machine.
 
-![SSH Port Scan](./Scanning_Ports.png)
+![SSH Port Scan](images(phase1)/Scanning_Ports.png)
 
 ---
 
@@ -23,7 +23,7 @@ As shown in the image below, the SSH service is open on the victim machine.
 
 We start by launching Metasploit with the `msfconsole` command. Then, we use the `ssh_login` scanner module to brute-force credentials using a wordlist.
 
-![Using msfconsole](./Using_Metasploit.png)
+![Using msfconsole](images(phase1)/Using_Metasploit.png)
 
 ---
 
@@ -34,11 +34,11 @@ After executing the scanner, the correct credentials are discovered:
 - **Username:** `vagrant`
 - **Password:** `vagrant`
 
-![Brute-force result](./Results1.1.png)  
+![Brute-force result](images(phase1)/Results1.1.png)  
 
 This allows remote command execution via SSH.
 
-![Remote access through SSH](./Remote_access.png)
+![Remote access through SSH](images(phase1)/Remote_access.png)
 
 ---
 
@@ -56,14 +56,14 @@ As with Task 1.1, we begin by scanning for open ports on the victim machine.
 
 A Python-based custom brute-force script was used, leveraging **Hydra** for fast execution.
 
-![Python script using Hydra](./Custom_Script.png)
+![Python script using Hydra](images(phase1)/Custom_Script.png)
 
 The script is made executable and run via the terminal:
 
-![chmod-image](./chmod.png)
+![chmod-image](images(phase1)/chmod.png)
 
 that will brute force the SSH login as shown below  
-![Brute-forcing in action](./SSH_Bruteforce.png)
+![Brute-forcing in action](images(phase1)/SSH_Bruteforce.png)
 
 ---
 
@@ -75,7 +75,7 @@ After running the custom script, the correct SSH login credentials were discover
 - **Password:** `vagrant`
 
 This result is shown below:  
-![Script output - success](./Results1.2.png)
+![Script output - success](images(phase1)/Results1.2.png)
 
 Similar to Task 1.1 Step 3, these credentials can now be used to SSH into the victim machine and execute remote commands.
 
