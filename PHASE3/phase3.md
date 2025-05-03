@@ -61,7 +61,7 @@ Initially, we launched a brute-force SSH attack using Hydra and Metasploit on Me
 
 ### Remote Access:
 
-![Remote Access](images/phase3/remoteaccess.png)
+![Remote Access](images(phase3)/remoteaccess.png)
 
 Next, we configured and activated Fail2Ban to monitor `/var/log/auth.log` for repeated SSH login failures. We edited the jail settings, restarted the service, and verified that the `sshd` jail was enabled and actively protecting the system.
 
